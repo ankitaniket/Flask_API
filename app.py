@@ -2,16 +2,13 @@ import os
 import glob
 from PIL import Image
 import tensorflow as tf
-from flask import Flask, render_template, request, send_from_directory, jsonify
+from flask import Flask, request,jsonify
 from keras.preprocessing.image import ImageDataGenerator
 from PIL import Image
 import numpy as np
 import os
-import keras
-from keras_preprocessing.image import load_img, img_to_array
 from keras.applications.inception_v3 import InceptionV3, preprocess_input
-from keras.models import load_model
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
