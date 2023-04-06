@@ -14,34 +14,8 @@ app = Flask(__name__)
 
 
 model = tf.keras.models.load_model("best_model.h5")
-# Define a route for the HTML page
-# @app.route('/')
-# def index():
-#     return render_template('index.html')
 
-# # Define a route for the POST request
-# @app.route('/predict', methods=['POST'])
-# def predict():
-#     # Get the uploaded image file
-#     image_file = request.files['image']
-
-#     # Load the model
-
-#     # Predict & classify image
-#     img = Image.open(image_file).convert('RGB')
-#     img = img.resize((256, 256))
-#     img_array = np.array(img)
-#     img_array = preprocess_input(img_array)
-#     input_arr = np.array([img_array])
-#     pred = np.argmax(model.predict(input_arr))
-
-#     if pred == 0:
-#         result = "This image does not contain a pothole."
-#     else:
-#         result = "This image contains a pothole."
-
-#     # Return the prediction result as a JSON object
-#     return jsonify({'result': result})
+# platform Darwin-22.4.0-x86_64-i386-64bit
 
 
 
