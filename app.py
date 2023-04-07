@@ -11,7 +11,7 @@ from keras.applications.inception_v3 import InceptionV3, preprocess_input
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
-
+CORS(app)
 
 model = tf.keras.models.load_model("best_model.h5")
 
